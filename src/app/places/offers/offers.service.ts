@@ -28,5 +28,9 @@ export class OffersService {
         return [...this._offers];
     }
 
+    getOffer(id: string){
+        return {...this._offers.find(p =>p.Id === id)}
+    }
+
     constructor() { }
 }
